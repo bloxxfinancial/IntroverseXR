@@ -5,14 +5,14 @@ using UnityEngine.UI;
 
 public class AnimateWeapon : MonoBehaviour
 {
-    [SerializeField] public GameObject weaponObject;
+    public GameObject weaponObject;
 
     private Animator animWeapon;
-    public Button buttonWeapon1;
-    public Button buttonWeapon2;
-    public Button buttonWeapon3;
-    public Button buttonWeapon4;
-    public Button buttonWeapon5;
+    public Button butWeapon1;
+    public Button butWeapon2;
+    public Button butWeapon3;
+    public Button butWeapon4;
+    public Button butWeapon5;
 
 
     void Start()
@@ -29,18 +29,18 @@ public class AnimateWeapon : MonoBehaviour
     IEnumerator SpinProtocol()
     {
         animWeapon.SetBool("spin", true);
-        buttonWeapon1.enabled = false;
-        buttonWeapon2.enabled = false;
-        buttonWeapon3.enabled = false;
-        buttonWeapon4.enabled = false;
-        buttonWeapon5.enabled = false;
-        yield return new WaitForSeconds(6);
-        buttonWeapon1.enabled = true;
-        buttonWeapon2.enabled = true;
-        buttonWeapon3.enabled = true;
-        buttonWeapon4.enabled = true;
-        buttonWeapon5.enabled = true;
+        butWeapon1.enabled = false;
+        butWeapon2.enabled = false;
+        butWeapon3.enabled = false;
+        butWeapon4.enabled = false; 
+        butWeapon5.enabled = false;
+        yield return new WaitForSeconds(4);
         animWeapon.SetBool("spin", false);
+        butWeapon1.enabled = true;
+        butWeapon2.enabled = true;
+        butWeapon3.enabled = true;
+        butWeapon4.enabled = true;
+        butWeapon5.enabled = true;
 
     }
 

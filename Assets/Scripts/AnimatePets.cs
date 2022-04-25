@@ -34,7 +34,7 @@ public class AnimatePets : MonoBehaviour
         buttonPet6.enabled = false;
         buttonPet7.enabled = false;
         buttonPet8.enabled = false;
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(5);
         buttonPet1.enabled = true;
         buttonPet2.enabled = true;
         buttonPet3.enabled = true;

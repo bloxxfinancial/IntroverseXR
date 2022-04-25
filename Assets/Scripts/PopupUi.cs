@@ -13,7 +13,7 @@ public class PopupUi : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             uiMessage.SetActive(true);
-            lightGroup.SetActive(true);
+            lightGroup.SetActive(true);            
 
         }
     }
