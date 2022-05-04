@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
-    public Transform target;
-    public int MaxDist = 5;
-    //public int MinDist = 1;
+    [SerializeField] private Transform lookTarget = null;
 
-    public void Update()
+    private void Update()
     {
-        if (Vector3.Distance(transform.position, target.position) <= MaxDist)//not MinDist
-        {
-            transform.LookAt(target);
-        }
+        Vector3 lookPos = new Vector3(lookTarget.position.x, transform.position.y, lookTarget.position.z);
 
+        transform.LookAt(lookPos);
     }
 }
