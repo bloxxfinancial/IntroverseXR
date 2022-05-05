@@ -6,7 +6,7 @@ public class futura1Vehicle : MonoBehaviour
 {
     private Animator animFutural1;
     public GameObject futura1Object;
-    private AudioSource hoverSound;
+    public AudioSource hoverSound;
 
     void Start()
     {

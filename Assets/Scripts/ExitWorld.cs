@@ -18,7 +18,7 @@ public class ExitWorld : MonoBehaviour
         IEnumerator ExitProtocol()
         {
             exitText.SetActive(false);
-            thankText.SetActive(false);
+            thankText.SetActive(true);
             yield return new WaitForSeconds(1);
             Application.Quit();
 

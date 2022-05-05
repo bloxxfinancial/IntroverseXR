@@ -5,7 +5,7 @@ using UnityEngine;
 public class DroneLook : MonoBehaviour
 {
     public Transform target;
-    public int MaxDist = 10;
+    public int MaxDist = 30;
     public int MinDist = 5;
 
     public void Update()
