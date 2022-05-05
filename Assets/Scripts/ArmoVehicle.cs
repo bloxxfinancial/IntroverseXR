@@ -19,7 +19,7 @@ public class ArmoVehicle : MonoBehaviour
 
     IEnumerator StartVehicle()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(20);
         armoVehicle.enabled = true;
         hoverSound.Play();
         yield return new WaitForSeconds(22.4f);

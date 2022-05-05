@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class AnimateCloth : MonoBehaviour
 {
     public GameObject fashionObject;
+    public GameObject fashionProduct;
    
     private Animator animFashion;
     public GameObject buttonGroup;
@@ -24,10 +25,13 @@ public class AnimateCloth : MonoBehaviour
 
     IEnumerator SpinProtocol()
     {
+        fashionProduct.SetActive(true);
+        yield return new WaitForSeconds(0.1f);
         animFashion.SetBool("spin", true);
         buttonGroup.SetActive(false);
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2.5f);
         animFashion.SetBool("spin", false);
+        fashionProduct.SetActive(false);
         buttonGroup.SetActive(true);
         
 

@@ -13,6 +13,7 @@ public class ReactivateWeapon : MonoBehaviour
 
     public GameObject triggerFashion;
     public GameObject triggerPets;
+    public GameObject weaponGroup;
 
 
     public void OnTriggerEnter(Collider other)
@@ -21,6 +22,7 @@ public class ReactivateWeapon : MonoBehaviour
         {
             triggerFashion.SetActive(false);
             triggerPets.SetActive(false);
+            weaponGroup.SetActive(true);
         }
     }
 
@@ -35,6 +37,7 @@ public class ReactivateWeapon : MonoBehaviour
             butWeapon5.enabled = true;
             triggerFashion.SetActive(true);
             triggerPets.SetActive(true);
+            weaponGroup.SetActive(false);
         }
             
     }

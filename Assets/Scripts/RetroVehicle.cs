@@ -19,7 +19,7 @@ public class RetroVehicle : MonoBehaviour
 
     IEnumerator StartVehicle()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(30);
         retroVehicle.enabled = true;
         hoverSound.Play();
         yield return new WaitForSeconds(36);

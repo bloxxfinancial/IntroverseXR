@@ -10,6 +10,7 @@ public class ReactivateFashion : MonoBehaviour
     public GameObject triggerPets;
 
     public GameObject lightGroup;
+    public GameObject fashionUI;
 
 
     public void OnTriggerEnter(Collider other)
@@ -19,6 +20,7 @@ public class ReactivateFashion : MonoBehaviour
             triggerPets.SetActive(false);
             triggerWeapon.SetActive(false);
             lightGroup.SetActive(true);
+            fashionUI.SetActive(true);
         }
     }
 
@@ -30,6 +32,7 @@ public class ReactivateFashion : MonoBehaviour
             triggerPets.SetActive(true);
             triggerWeapon.SetActive(true);
             lightGroup.SetActive(false);
+            fashionUI.SetActive(false);
         }
     }
 }

@@ -19,7 +19,7 @@ public class VehickeController : MonoBehaviour
 
     IEnumerator StartVehicle()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(20);
         animVehicle.enabled = true;
         hoverSound.Play();
         yield return new WaitForSeconds(5);

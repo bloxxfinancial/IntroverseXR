@@ -19,7 +19,7 @@ public class futura1Vehicle : MonoBehaviour
 
     IEnumerator StartVehicle()
     {
-        yield return new WaitForSeconds(7);
+        yield return new WaitForSeconds(10);
         animFutural1.enabled = true;
         hoverSound.Play();
         yield return new WaitForSeconds(10);
