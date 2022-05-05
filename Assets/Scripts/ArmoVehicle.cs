@@ -26,7 +26,7 @@ public class ArmoVehicle : MonoBehaviour
         hoverSound.Stop();
         yield return new WaitForSeconds(60);
         hoverSound.Play();
-        yield return new WaitForSeconds(17);
+        yield return new WaitForSeconds(17.2f);
         armoVehicle.enabled = false;
         hoverSound.Stop();
         yield return new WaitForSeconds(10);
